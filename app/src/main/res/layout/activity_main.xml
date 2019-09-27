@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btAndi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Andi"
+        app:layout_constraintBottom_toTopOf="@+id/btJunai"
+        app:layout_constraintStart_toStartOf="@+id/btJunai"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btJunai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="116dp"
+        android:text="Junai"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btYusie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Yusie"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="@+id/btJunai"
+        app:layout_constraintTop_toBottomOf="@+id/btJunai" />
+
+    <Button
+        android:id="@+id/btVita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Vita"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="@+id/btYusie"
+        app:layout_constraintTop_toBottomOf="@+id/btYusie" />
+</androidx.constraintlayout.widget.ConstraintLayout>
